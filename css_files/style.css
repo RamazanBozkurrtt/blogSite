@@ -75,8 +75,8 @@
 }
 
 .card-image {
-    width: 250px;
-    height: 250px;
+    width: 225px;
+    height: 225px;
     object-fit: cover; 
     border-bottom: 1px solid #eee;
     flex-shrink: 0;
