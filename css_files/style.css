@@ -1,0 +1,227 @@
+
+.upperBar{
+  background-color: rgba(0, 0, 0, 0.654);
+  display: flex;
+  padding: 5px;
+  justify-content: flex-end;
+}
+
+.right-area{
+  background-color: rgba(0, 0, 0, 0.654);
+  display: flex;
+  padding: 18px 120px; 
+  justify-content: flex-end;
+}
+
+.top-image{
+  background: url('../images/topBackground4.png') no-repeat center center;
+  background-size:  contain;  
+  padding: 95px 0;
+  position: relative;
+} 
+
+.top-image::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(2px);
+  z-index: -1;
+}
+
+
+.main-content {
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    flex-direction: column; 
+    flex: 2.3; 
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    gap: 20px; 
+}
+
+
+.container-content-recently-posted {
+    background-color: rgba(255, 255, 255, 0.70);
+    display: flex;
+    flex-direction: column; 
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    align-items: flex-start; 
+    justify-content: flex-start; 
+    padding: 25px 30px;
+    gap: 25px; 
+}
+
+
+.recently-posted-content-card {
+    background-color: rgba(255, 255, 255, 0.70);
+    overflow: hidden;
+    width: 100%; 
+    display: flex; 
+    flex-direction: row;
+    transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.recently-posted-content-card:hover {
+    background-color: rgba(255, 255, 255, 0.85); 
+    transform: translateY(-3px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover; 
+    border-bottom: 1px solid #eee;
+    flex-shrink: 0;
+}
+
+.card-title {
+    font-family: 'vostela'; 
+    font-size: 1.82em;
+    font-weight: 700;
+    color: #1e1e1e;
+    line-height: 1.3;
+    margin: 0;
+    display: inline-block;
+}
+
+.card-summary {
+    font-family: 'vostela';
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #1e1e1e;
+    margin-left: 12px;
+    margin-bottom: 16px;
+    line-height: 1.4;
+}
+
+.card-excerpt {
+    font-family: 'vostela';
+    font-size: 1em;
+    font-weight: 700;
+    color: #2d2b2b;
+    margin-bottom: 25px;
+    margin-left: 12px;
+}
+
+.card-body {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-meta {
+  margin-top: auto;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.card-meta p {
+  font-size: 0.84em;
+  color: #888;
+  font-weight: 700;
+  margin: 0;
+}
+
+.section-title-container {
+  background-color: rgba(255, 255, 255, 0.85);
+  width: 500px;
+  border-radius: 10px;
+  padding: 12px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 5px; 
+}
+
+.section-title {
+  position: relative;
+  font-size: 25px;
+  color: #333;
+  text-align: center;
+  padding: 0;
+}
+
+.title-link{
+  transition: transform 0.2s;
+  text-decoration: none;
+  color: inherit;
+  display: inline-block; 
+  margin-left: 12px;
+  margin-bottom: 10px;
+  margin-top: 0.1px;
+}
+
+.title-link:hover {
+    transform: translateY(-3px);
+}
+
+
+.right-sidebar-wrapper {
+ display: flex;
+ flex-direction: column;
+ flex: 0.7;
+ gap: 30px;
+}
+
+.subscribe-form {
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+ margin-top: 15px;
+}
+
+.subscribe-input {
+ width: 100%;
+ padding: 10px;
+ border: 1px solid #ccc;
+ border-radius: 4px;
+ font-family: Arial, sans-serif;
+ font-size: 0.9em;
+ box-sizing: border-box; 
+}
+
+.subscribe-button {
+ width: 100%;
+ padding: 10px;
+ background-color: rgb(35, 186, 197);
+ color: white;
+ border: none;
+ border-radius: 4px;
+ font-weight: bold;
+ cursor: pointer;
+ transition: background-color 0.3s;
+ font-size: 0.95em;
+}
+
+.subscribe-button:hover {
+ background-color: rgb(28, 148, 156);
+}
+
+
+.sidebar-header {
+ width: 100%; 
+ margin-bottom: -5px;
+ margin-top: 15px;
+}
+
+
+.sidebar-header .section-title::before,
+.sidebar-header .section-title::after {
+  width: 25%;
+}
+
+.sidebar-header .section-title::before {
+  left: 5%;
+  transform: translateY(-50%);
+}
+
+.sidebar-header .section-title::after {
+  right: 5%;
+  transform: translateY(-50%);
+}
